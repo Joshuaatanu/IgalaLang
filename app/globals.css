@@ -2,11 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-100% - 20px)
+    ); /* Adjust -20px to match your gap */
+  }
+}
+
+.animate-infinite-scroll {
+  animation: scroll 20s linear infinite; /* Adjust duration as needed */
+  display: inline-block; /* Or inline-flex if you need flex properties */
+  width: fit-content; /* Important for proper animation calculation */
+}
+
+/* Optional:  Make sure parent container hides overflow */
+.overflow-x-hidden {
+  overflow-x: hidden;
 }

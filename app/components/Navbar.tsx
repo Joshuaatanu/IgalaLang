@@ -23,7 +23,7 @@ function Navbar() {
             <h1>Home</h1>
           </a>
 
-          <a
+          {/* <a
             href="/about"
             className={`relative after:absolute after:left-1/4 after:bottom-0 after:h-[2px] after:w-1/2 after:origin-bottom-right after:bg-purple-200 after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-150
               ${
@@ -33,7 +33,7 @@ function Navbar() {
               }`}
           >
             <h1>About us</h1>
-          </a>
+          </a> */}
 
           <a
             href="/translate"
@@ -56,7 +56,7 @@ function Navbar() {
                   : "hover:text-purple-200 after:scale-x-0"
               }`}
           >
-            <h1>Project</h1>
+            <h1>POS TAG</h1>
           </a>
 
           <a
