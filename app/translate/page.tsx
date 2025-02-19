@@ -7,7 +7,7 @@ function Translation() {
   const [text, setText] = useState("");
   const [translatedText, setTranslatedText] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-
+// hhh
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!text.trim()) return;
